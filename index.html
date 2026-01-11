@@ -205,6 +205,17 @@
 <footer>
     <p>&copy; 2026 Rafael Antunes Mariani. Desenvolvido com código limpo.</p>
 </footer>
-
+<script>
+        // Força a página a começar no topo ao atualizar
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+        
+        // Garante que o scroll vá para o início ao carregar
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+    </script>
+</body>
 </body>
 </html>
