@@ -1,121 +1,209 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
+    <title>Rafael Mariani | Portfólio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="estrutura.css">
-    <script src="estrutura.js"></script>
-
 </head>
-
 <body>
-    
 
-    <nav class="navegacao">
-        <ul class="menu">
-            <li>
-                <a href="#inicio" class="menu-link"> Inicio</a>
-            </li>
-            <li>
-                <a href="#sobre" class="menu-link">Sobre</a>
-            </li>
-            <li>
-                <a href="#portifolio" class="menu-link">Portifolio</a>
-            </li>
-            <li>
-                <a href="#contato" class="menu-link">Contato</a>
-            </li>
-        </ul>
-    </nav>
+<nav class="navbar">
+    <div class="logo">RM.</div>
+    <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato" class="btn-contato">Contato</a></li>
+    </ul>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>
 
-    <main id="inicio" class="Cabecalho">
-         
-        <img src="./personagem/foto4.jpeg" alt="foto de perfil" class="foto-perfil">
-        <h1>Rafael Antunes Mariani</h1>
-        <p class="sub-cabecalho"> Programador</p>
-
-    </main>
-
-  
-
-    <section id="sobre" class="sobre">
-        <h2 class="sobre-titulo"> Sobre Mim</h2>
-        <div class="sobre-caixa">
-            <p class="sobre-paragrafo">Sou Rafael, desenvolvedor com foco em Java, C, lógica de programação e PostgreSQL. Tenho experiência na criação de sistemas com interface gráfica, aplicações conectadas a banco de dados e soluções bem estruturadas, sempre com código limpo e eficiente.</p>
-        </div>
-    </section>
-
-    <section id="portifolio" class="projetos">
-        <h2 class="projetos-titulos">Clique para acessar <br>Meus projetos</h2>
-        <div class="projetos-caixa">
-
-
-            <div class="projetos-cards">
-                <a  href="https://github.com/Rafaelzzzx/multi-calculadora " target="_blank" >
-                <img src="./personagem/calculadora.png" alt="projeto1" class="projetos-imagem">
-                </a>
-                <div class="caixa-texto">
-                <h3 class="info-projetos">Projeto: Calculadora + Gerador de Senhas</h3>
-                <p class="paragrafo-projetos"> Este projeto é uma aplicação Java desenvolvida com foco na praticidade e
-                    organização de funcionalidades matemáticas e utilitárias. Através de uma interface gráfica intuitiva
-                    construída com Swing, o sistema oferece diversas calculadoras personalizadas para fórmulas
-                    específicas (como Bhaskara, IMC, entre outras), organizadas em janelas independentes para facilitar
-                    a navegação. </p>
-                    </div>
+<main id="inicio" class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <p class="ola">Olá, eu sou</p>
+            <h1>Rafael Antunes Mariani</h1>
+            <h2 class="digitando">Desenvolvedor Java & Fullstack</h2>
+            <div class="social-links">
+                <a href="https://github.com/Rafaelzzzx" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/rafael-antunes-java" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:Rafaelantunesmariani@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
+            <a href="#projetos" class="cta-button">Ver Meus Projetos</a>
+        </div>
+        <div class="hero-img">
+            <img src="./personagem/foto4.jpeg" alt="Rafael Mariani">
+        </div>
+    </div>
+</main>
 
-            <div class="projetos-cards">
-                <a href="https://github.com/Rafaelzzzx/Banco-de-dados" target="_blank">
-                <img  src="./personagem/banco2.png" alt="projeto2" class="projetos-imagem" >
-                </a>
-                <div class="caixa-texto">
-                    <h3 class="info-projetos">Projeto:Consulta Medicas</h3>
-                    <p class="paragrafo-projetos"> Sistema de Gerenciamento de Consultas Médicas 
-                       
+<section id="sobre" class="section">
+    <h2 class="section-title">Sobre Mim</h2>
+    <div class="container sobre-content">
+        <div class="sobre-texto">
+            <p>
+                Sou um desenvolvedor em formação acadêmica (Ciência da Computação - UNESC), apaixonado por transformar lógica em soluções eficientes.
+                Tenho forte base em <strong>Java</strong> e <strong>Banco de Dados</strong>, mas também atuo no desenvolvimento Web Fullstack com <strong>Node.js</strong> e <strong>React</strong>.
+            </p>
+            <p>
+                Meus projetos interdisciplinares recentes demonstram minha capacidade de integrar Back-end e Front-end, criando aplicações completas e funcionais.
+            </p>
+        </div>
+    </div>
+</section>
 
-                        Um sistema desktop completo desenvolvido em Java Swing com banco de dados PostgreSQL, voltado
-                        para o gerenciamento de consultas médicas. O sistema permite o cadastro de pacientes, sintomas,
-                        médicos, agendamento de consultas e geração de laudos automáticos. A arquitetura segue o padrão
-                        DAO, promovendo manutenção fácil e organização clara.
+<section id="skills" class="section">
+    <h2 class="section-title">Minhas Habilidades</h2>
+    <div class="container skills-grid">
 
-                    </p>
+        <div class="category-card">
+            <div class="icon-header"><i class="fas fa-server"></i></div>
+            <h3>Back-end & Java</h3>
+            <div class="skill-list">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>API REST</span>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <div class="icon-header"><i class="fas fa-laptop-code"></i></div>
+            <h3>Front-end Web</h3>
+            <div class="skill-list">
+                <span>JavaScript</span>
+                <span>React.js</span>
+                <span>Next.js</span>
+                <span>HTML5 / CSS3</span>
+                <span>Swing</span>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <div class="icon-header"><i class="fas fa-database"></i></div>
+            <h3>Banco de Dados</h3>
+            <div class="skill-list">
+                <span>PostgreSQL</span>
+                <span>MongoDB</span>
+                <span>SQL Avançado</span>
+                <span>Modelagem</span>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <div class="icon-header"><i class="fas fa-tools"></i></div>
+            <h3>Ferramentas</h3>
+            <div class="skill-list">
+                <span>Git / GitHub</span>
+                <span>Docker</span>
+                <span>Linux</span>
+                <span>Clean Code</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="projetos" class="section">
+    <h2 class="section-title">Projetos em Destaque</h2>
+
+    <div class="container projetos-grid">
+
+        <div class="projeto-card destaque">
+            <div class="card-badge">Backend API</div>
+            <div class="img-wrapper">
+                <img src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" alt="Backend API Node.js">
+            </div>
+            <div class="card-content">
+                <h3>API Interdisciplinar (Node.js)</h3>
+                <p>Sistema backend robusto utilizando Node.js, Express e MongoDB. Gerencia rotas complexas de usuários, produtos, lojas e fornecedores com segurança.</p>
+                <div class="tech-tags">
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>MongoDB</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/Rafaelzzzx" target="_blank" class="btn-small"><i class="fab fa-github"></i> Ver Código</a>
                 </div>
             </div>
+        </div>
 
-
-            <div class="projetos-cards">
-                <img src="./personagem/teste3.png" alt="projeto1" class="projetos-imagem">
-                <div class="caixa-texto">
-                <h3 class="info-projetos">Banco de dados</h3>
-                <p class="paragrafo-projetos"> Um sistema desktop desenvolvido em Java Swing com PostgreSQL, focado na consulta e gerenciamento de dados acadêmicos. O sistema permite buscar informações sobre professores, disciplinas, turmas, horários e salas, facilitando o acesso e organização dos dados escolares de forma simples e eficiente. </p>
+        <div class="projeto-card destaque">
+            <div class="card-badge">Frontend Web</div>
+            <div class="img-wrapper">
+                <img src="./personagem/front.png" alt="Interface React Frontend">
+            </div>
+            <div class="card-content">
+                <h3>Web App Interdisciplinar</h3>
+                <p>Interface moderna desenvolvida com Next.js e React. Consome a API do backend para exibir dados dinâmicos, cadastros e dashboards interativos.</p>
+                <div class="tech-tags">
+                    <span>Next.js</span>
+                    <span>React</span>
+                    <span>CSS3</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/Rafaelzzzx" target="_blank" class="btn-small"><i class="fab fa-github"></i> Ver Código</a>
                 </div>
             </div>
-
         </div>
-    </section>
 
-
-    <section id="contato" class="Contatos">
-        <h2 class="contatos-titulo">Entre em Contato</h2>
-
-        <form class="formulario-contato" id="formulario" onsubmit="enviar(event)" >
-            <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form" id="nome">
+        <div class="projeto-card destaque">
+            <div class="card-badge">Back-end</div>
+            <div class="img-wrapper">
+                <img src="./personagem/banco2.png" alt="Sistema Java Spring">
             </div>
-            <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua Mensagem" id="mensagem" rows="5"></textarea>
+            <div class="card-content">
+                <h3>Gestão Médica (API)</h3>
+                <p>Sistema Back-end robusto desenvolvido em Java com Spring Boot e PostgreSQL. Focado na arquitetura MVC, regras de negócio complexas e persistência eficiente.</p>
+                <div class="tech-tags">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/Rafaelzzzx/Banco-de-dados" target="_blank" class="btn-small"><i class="fab fa-github"></i> Ver Código</a>
+                </div>
             </div>
-          <button type="submit" class="botao">Enviar Para whatsapp</button>
+        </div>
 
-        </form>
-    </section>
-  
+    </div>
 
-  
+    <div style="text-align: center; margin-top: 3rem;">
+        <a href="https://github.com/Rafaelzzzx" target="_blank" class="btn-small" style="padding: 15px 30px; font-size: 1rem;">
+            <i class="fab fa-github"></i> Ver perfil completo no GitHub
+        </a>
+    </div>
 
+</section>
+
+<section id="contato" class="section contato-section">
+    <h2 class="section-title">Entre em Contato</h2>
+    <div class="container" style="text-align: center;">
+        <p style="color: #94a3b8; margin-bottom: 20px;">
+            Estou disponível para novas oportunidades. Entre em contato diretamente pelo WhatsApp:
+        </p>
+
+        <a href="https://wa.me/554891619091?text=Ol%C3%A1%20Rafael%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar."
+           target="_blank"
+           class="botao-enviar"
+           style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-width: 250px;">
+            Chamar no WhatsApp <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i>
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Rafael Antunes Mariani. Desenvolvido com código limpo.</p>
+</footer>
 
 </body>
-
 </html>
